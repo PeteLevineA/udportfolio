@@ -8,7 +8,7 @@
     <title>Pete Levine: Critical Rendering Path Portfolio</title>
 
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!--<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">-->
 
     <style type="text/css">
         html {
@@ -18,8 +18,9 @@
           -ms-text-size-adjust: 100%;
           -webkit-text-size-adjust: none;
         }
-        body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400; }
-        body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+        body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 100; }
+        body, button, input, select, textarea { 
+            font-family: "Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif; color: #333; }
 
         a { color: #12C; }
         a:visited { color: #61C; }
@@ -63,16 +64,7 @@
 
     </style>
     <link href="css/print.css" rel="stylesheet" media="print">
-    <script async>
-        (function (w, g) {
-            w['GoogleAnalyticsObject'] = g;
-            w[g] = w[g] || function () { (w[g].q = w[g].q || []).push(arguments) }; w[g].l = 1 * new Date();
-        })(window, 'ga');
-
-        // Optional TODO: replace with your Google Analytics profile ID.
-        ga('create', 'UA-XXXX-Y');
-        ga('send', 'pageview');
-    </script>      
+      
     <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
   </head>
@@ -119,5 +111,16 @@
     <footer>
       <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
     </footer>
+    <script async>
+        (function (w, g) {
+            w['GoogleAnalyticsObject'] = g;
+            w[g] = w[g] || function () { (w[g].q = w[g].q || []).push(arguments) }; w[g].l = 1 * new Date();
+        })(window, 'ga');
+
+        // Optional TODO: replace with your Google Analytics profile ID.
+        ga('create', 'UA-XXXX-Y');
+        ga('send', 'pageview');
+    </script>
+      
   </body>
 </html>
